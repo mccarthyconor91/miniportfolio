@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <header>
+      <div class="header-container">
+        <div class="title-container">
+        <h1>Hello, I am <span>Conor McCarthy</span>.</h1>
+        <h2>Frontend Developer</h2>
+        </div>
+        <div id="photo-container"> 
+        <img id="photo" src="pic.jpg" ></img>
+       </div>
+     </div>
+    </header>
+    <body>
+       
+    <main>
+       <div id="bio">
+         <div class="bio-header"><h2>Who am I?</h2></div>
+         <div class="bio-main">
+         <div class="bio-text">
+        <p>I am a passionate creator who loves to learn and teach. My two main career paths have been online marketing and social media. I have spent the last 5 years working remotely for an online marketing company, this allowed me to travel and work from Spain. As well as this I am a Football Freestyler, this has been something I have been doing since I was 16. I have always loved to teach and share tutorials online across social media. Outside of work, I enjoy going to the gym and gaming in the evenings.</p>
+        <p>In January 2023, I started my coding journey. Technology has always been a huge part of my life and over the years I have taught myself to edit videos, create wordpress websites and create graphics in Photoshop. I am really excited about where this new journey will take me!</p>
+         </div>
+        <img src="freestyle.png">
+        </div>
+       </div>
+    </main>
+
+
+    <section class="socials">
+        
+      <a href="http://www.twitter.com"><img src="twitter.png" height="125"></a>
+      <a href="http://www.instagram.com"><img src="instagram-logo.png" height="125"></a>
+      <a href="http://www.linkedin.com"><img src="linkedin.png" height="125"></a>
+      <a href="http://www.youtube.com"><img src="youtube.png" height="125"></a>
+    </section>
+
+    <section class="quiz">
+      <div class="quiz-header">
+        <h2>Learn About Me</h2>
+        <p>Answer the following questions to learn a bit about me!</p>
+      </div>
+      <div class="question-container">
+        <h3>What is my favourite sport?</h3>
+            <ul>
+                <li onclick="result1()" id="basketball">Basketball</li>
+                <li onclick="result1()" id="rugby">Rugby</li>
+                <li onclick="correct1()" id="football">Football</li>
+                <li onclick="result1()" id="cricket">Cricket</li>
+            </ul>
+            <p id="answer" class="answer-reveal"></p>
+      </div>
+      <div class="question-container">
+        <h3>Which languages can I speak?</h3>
+        <ul> 
+        <li onclick="result2()" id="onlyEnglish">Only English</li>
+        <li onclick="correct2()" id="spanish">Spanish</li>
+        <li onclick="result2()" id="french">French</li>
+        <li onclick="result2()" id="frenchSpanishEnglish">French, Spanish and English</li>
+        </ul>
+        <p id="answer2" class="answer-reveal"></p>
+      </div>
+      <div class="question-container">
+        <h3>What's my 'go to' cheat meal?</h3>
+        <ul> 
+            <li onclick="correct3()" id="pizza">Pizza</li>
+            <li onclick="result3()" id="burrito">Burrito</li>
+            <li onclick="result3()" id="burgerKing">Burger King</li>
+            <li onclick="result3()" id="fishAndChips">Fish and Chips</li>
+        </ul>
+        <p id="answer3" class="answer-reveal"></p>
+      </div>
+      <div class="question-container">
+        <h3>Favourite TV series?</h3>
+        <ul> 
+            <li onclick="result4()" id="inbetweeners">Inbetweeners</li>
+            <li onclick="correct4()" id="theOffice">The Office</li>
+            <li onclick="result4()" id="breakingBad">Breaking Bad</li>
+            <li onclick="result4()" id="theSimpsons">The Simpsons</li>
+        </ul>
+        <p id="answer4" class="answer-reveal"></p>
+       </div>
+    </section>
+    </body>
+    <footer>
+        <h3>Contact me: mccarthyconor91@gmail.com</h3>
+        <script src="index.js" async defer> </script>
+    </footer>
+</html>
